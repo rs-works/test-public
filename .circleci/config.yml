@@ -1,0 +1,15 @@
+version: 2.1
+executors:
+  python:
+    docker:
+      - image: circleci/python
+jobs:
+  deploy:
+    executor: python
+    steps:
+      - checkout
+      - run: sh deploy.sh
+workflows:
+  approved_deploy:
+    jobs:
+      - deploy
