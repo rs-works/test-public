@@ -1,10 +1,12 @@
 #!/bin/bash
 
-echo   curl -s -X POST "https://api.github.com/repos/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}/deployments" \
-      -H 'Content-Type: application/json' \
-      -H 'Accept: application/vnd.github.ant-man-preview+json' \
-      -u ${GITHUB_ACCESS_TOKEN} \
-      -d "{"ref": "${CIRCLE_SHA1}", "environment": "${environment}", "required_contexts": [], "auto_merge": false}"
+#curl -s -X POST https://api.github.com/repos/rs-works/test-public/deployments \
+#-H Content-Type: application/json \
+#-H Accept: application/vnd.github.ant-man-preview+json \
+#-u \
+#-d {ref: 5a99fa6a5421169c5f635ac25a2ab41d0894b62c, environment: , required_contexts: [], auto_merge: false}
+
+env
 
 # Create a deployment
 create_gh_deployment () {
