@@ -9,6 +9,8 @@ jobs:
     steps:
       - checkout
       - run: sh deploy.sh
+      - run: sleep 3
+      - run: sh deploy_success.sh
 workflows:
   approved_deploy:
     jobs:
