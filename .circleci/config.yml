@@ -2,7 +2,7 @@ version: 2.1
 executors:
   python:
     docker:
-      - image: circleci/golang
+      - image: bashell/alpine-bash
 jobs:
   deploy:
     executor: python
