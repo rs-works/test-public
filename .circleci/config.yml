@@ -16,7 +16,7 @@ jobs:
 workflows:
   approved_deploy:
     jobs:
-      - deploy
+      - deploy:
           filters:
             branches:
               only:
