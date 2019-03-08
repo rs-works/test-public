@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# CIRCLE_PROJECT_USERNAME=rs-works
+# CIRCLE_PROJECT_REPONAME=test-public
+# GITHUB_ACCESS_TOKEN=rs-works:7ee4f25438e71c0988f4ec97eb735c08134663ff
+# CIRCLE_SHA1=1e7ee91904958f9b76ebdb543dd1cc01a5d5dc53
+# CIRCLE_BUILD_URL=https://circleci.com/gh/rs-works/test-public/13
+# gh_deploy_id=133104486
+echo gh_deploy_id = $gh_deploy_id
+
 # Notify GitHub of a successful deployment
 notify_gh_about_a_deployment () {
   declare -r deployment_id=${1}
@@ -12,11 +20,4 @@ notify_gh_about_a_deployment () {
 }
 
 # When a deploy is successful:
-# CIRCLE_PROJECT_USERNAME=rs-works
-# CIRCLE_PROJECT_REPONAME=test-public
-# GITHUB_ACCESS_TOKEN=rs-works:e70ae351f3d587c9d2676dd37d9c6e752d4515f1
-# CIRCLE_SHA1=75da97ddc1380c369565292fe9b19f0d7dd9e72d
-# CIRCLE_BUILD_URL=https://circleci.com/gh/rs-works/test-public/6
-# gh_deploy_id=133098781
-echo gh_deploy_id = $gh_deploy_id
 notify_gh_about_a_deployment $gh_deploy_id "success"
