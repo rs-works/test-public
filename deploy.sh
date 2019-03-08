@@ -9,7 +9,7 @@ create_gh_deployment () {
       -H 'Content-Type: application/json' \
       -H 'Accept: application/vnd.github.ant-man-preview+json' \
       -u ${GITHUB_ACCESS_TOKEN} \
-      -d "{\"ref\": \"${CIRCLE_SHA1}\", \"environment\": \"${environment}\", \"required_contexts\": [], \"auto_merge\": false}"
+      -d "{\"ref\": \"${CIRCLE_SHA1}\", \"environment\": \"${environment}\", \"required_contexts\": [], \"auto_merge\": false, \"description\": \"Deploy request from CircleCI\"}"
 }
 
 # Run this function when you trigger a deploy.
