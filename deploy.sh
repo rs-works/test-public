@@ -1,7 +1,7 @@
 #!/bin/bash
 
-deploy_create.sh
+sh deploy_create.sh
 
 sleep 3
 
-deploy_success.sh
+sh deploy_success.sh
