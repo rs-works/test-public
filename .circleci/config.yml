@@ -2,7 +2,8 @@ version: 2.1
 executors:
   python:
     docker:
-      - image: bashell/alpine-bash
+      - image: cfmanteiga/alpine-bash-curl-jq
+
 jobs:
   deploy:
     executor: python
