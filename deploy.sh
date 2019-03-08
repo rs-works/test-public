@@ -1,6 +1,7 @@
 #!/bin/bash
 
-environment=dev
+environment=production
+# environment=dev
 
 # Create a deployment
 create_gh_deployment () {
@@ -33,4 +34,5 @@ notify_gh_about_a_deployment () {
 }
 
 # When a deploy is successful:
-notify_gh_about_a_deployment $gh_deploy_id "success"
+declare -r notified_gh_about_a_deployment=$(notify_gh_about_a_deployment $gh_deploy_id "success")
+echo $notified_gh_about_a_deployment | jq .
