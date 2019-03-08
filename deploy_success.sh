@@ -2,8 +2,8 @@
 
 # CIRCLE_PROJECT_USERNAME=rs-works
 # CIRCLE_PROJECT_REPONAME=test-public
-# GITHUB_ACCESS_TOKEN=rs-works:7ee4f25438e71c0988f4ec97eb735c08134663ff
-# CIRCLE_SHA1=1e7ee91904958f9b76ebdb543dd1cc01a5d5dc53
+# GITHUB_ACCESS_TOKEN=rs-works:
+# CIRCLE_SHA1=
 # CIRCLE_BUILD_URL=https://circleci.com/gh/rs-works/test-public/13
 # gh_deploy_id=133104486
 echo gh_deploy_id = $gh_deploy_id
