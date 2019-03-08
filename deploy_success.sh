@@ -18,4 +18,5 @@ notify_gh_about_a_deployment () {
 # CIRCLE_SHA1=75da97ddc1380c369565292fe9b19f0d7dd9e72d
 # CIRCLE_BUILD_URL=https://circleci.com/gh/rs-works/test-public/6
 # gh_deploy_id=133098781
+echo gh_deploy_id = $gh_deploy_id
 notify_gh_about_a_deployment $gh_deploy_id "success"
