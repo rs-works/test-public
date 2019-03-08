@@ -11,8 +11,6 @@ jobs:
       - checkout
       - run: ln -s /bin/bash /bin/sh -f
       - run: sh deploy.sh
-      # - run: sleep 3
-      # - run: sh deploy_success.sh
 workflows:
   approved_deploy:
     jobs:
