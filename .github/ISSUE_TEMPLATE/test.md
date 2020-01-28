@@ -2,7 +2,7 @@
 name: example
 about: サンプル
 title: テスト
-projects: "https://github.com/rs-works/test-public/projects/5"
+projects: "rs-works/test-public/5"
 labels: backlog
 ---
 
