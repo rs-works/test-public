@@ -3,7 +3,7 @@ name: example
 about: サンプル
 title: テスト
 labels: backlog
-projects: rs-works/test-public/5
+projects: test-public/5
 ---
 
 ## 備考
